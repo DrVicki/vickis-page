@@ -328,7 +328,7 @@ nav { display: none; }
     color: var(--clr-accent);
     text-align: center;
     padding: 1.0em 0;
-        font-size: var(--fs-h2);
+        font-size: var(--fs-h3);
 }
 
 .footer a { 
