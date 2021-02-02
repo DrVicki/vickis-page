@@ -1,18 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Vickis Page</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DevVicki Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="style.css">
+
     </head>
     <body>
-        <div class="main-container">
-            <div class="header">
-                <h1> Vickis Page</h1>
+        <header>
+            <div class="logo">
+                <img src="images/drvicki1.png" alt="">
             </div>
-            <div class="main-content">
-                <img src="Vicki_Bealman.png">
-                <p>Hi, my name is Digital Diva and I am working a tutorial on how to make a simple website!</p>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+           
+            <!-- Introduction -->
+            <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+            Hi; I am <strong>Vicki Bealman</strong></h1>
+            <p class="section__subtitle section__subtitle--intro"> developer & instructor</p>
+            <img src="images/devvicki.png" alt="A picture of Vicki Bealman smiling" class="intro__img">
+        </section>
+
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I Do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Design + Development</h3>
+                    <p>As Founding Director, Desinger, & Developer, Vicki created and maintained the web presence of clients and partners. She assumed full responsibility for creating the look and functionality of websites, through management of eCommerce Programming, Internet Security, email Server Experience, and Interactive Page Development, to include Web Forms, Interactive Databases, Encrypted Data Access, and Data Security. </p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Instructor</h3>
+                    <p>After spending more than two decades working in government, business, and multimillion-dollar financial services, Vicki knows what truly drives learning of concepts for real-world application, learner success, and desire for lifelong learning; and it’s not mastering theory alone. Vicki's experience includes University of Florida, Johns Hopkins University, University of Phoenix, & Tidewater Community College. In addition, currently being a Full-Stack Instructor at DigitalCrafts is a teaching highlight!
+                    </p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Instructional Design</h3>
+                    <p>Vicki has developed curricula for diverse institutions of higher education to include University of Florida, Johns Hopkins University, University of Virginia, University of Phoenix, and Tidewater Community College. Her learning activities have been featured in Liberty University’s Doctor of Education program to include conducting an advance S.W.O.T. Analysis of local and regional education systems. In addition to her curriculum and learning activity experience, Vicki is Quality Matter certified as Master Reviewer.</p>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+            
+            <a href="#work" class="btn">See My Work</a>
+        </section>
+      
+
+        <!-- About Me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I Am</h2>
+            <p class="section__subtitle section__subtitle--about"> Full-Stack Developer & Instructor </p>
+            <div class="about-me__body">
+                 <p>Vicki Bealman, Course Director at Full Sail University & Full-Stack Instructor at DigitalCrafts, is a passionate developer &   educator who partners with CEOs, executives, and industry specialists to develop web applications and web sites, plus real-world educational experiences for 21st century learners.  </p>
+                 <p>Vicki holds an EdD in Educational Leadership, EdS in Educational Leadership, MS in Accounting and Information Technology, BS in Accounting and Information Technology from Liberty University, and a newly minted MS in Mobile Gaming from Full Sail University.</p>
             </div>
-        </div>
+
+            <img src="images/devvicki2.jpeg" alt="Vicki in camera" class="about-me__img">
+        </section>
+
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__tile--work">My Work</h2>
+            <p class="section__subtitle section__subtitle--work">Samples of some of my work </p>
+
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="#" class="portfolio__item">
+                    <img src="images/PacManDemo.gif" alt="PacMan-Finally" class="portfolio__img">
+                </a>
+                <!-- Portfolio item 02 -->
+                <a href="#" class="portfolio__item">
+                     <img src="images/demo.gif" alt="Dr. Vicki's Top News" class="portfolio__img">
+                </a>
+                                                                <!-- Portfolio item 03 -->
+                <a href="#" class="portfolio__item">
+                    <img src="images/ChatDemo.gif" alt="Stream-Chat-JavaScript" class="portfolio__img">
+                </a>
+                <!-- Portfolio item 04 -->
+                <a href="#" class="portfolio__item">
+                    <img src="images/demopm.gif" alt="PacMan CSS" class="portfolio__img">
+                </a>
+                                                                <!-- Portfolio item 05 -->
+                <a href="#" class="portfolio__item">
+                    <img src="images/Hangman_demo.gif" alt="Dr. Vicki's Hangman Game" class="portfolio__img">
+                </a>
+                <!-- Portfolio item 06 -->
+                <a href="#" class="portfolio__item">
+                    <img src="images/unsplash_demo.gif" alt="Unsplash Get Photo" class="portfolio__img">
+                </a>
+                                                                <!-- Portfolio item 07 -->
+                <a href="#" class="portfolio__item">
+                    <img src="images/game1.gif" alt="HTML Game" class="portfolio__img">
+                </a>
+                <!-- Portfolio item 08 -->
+                <a href="#" class="portfolio__item">
+                    <img src="images/DrVickisTutorial.gif" alt="" class="portfolio__img">
+                </a>
+                <!-- Portfolio item 09 -->
+                <a href="#" class="portfolio__item">
+                     <img src="images/demopm2.gif" alt="" class="portfolio__img">
+                </a>
+                <!-- Portfolio item 0 01 -->
+                <a href="#" class="portfolio__item">
+                        <img src="images/whos-in-space-demo.gif" alt="" class="portfolio__img">
+                </a>
+                <!-- Portfolio item 0 02 -->
+                <a href="#" class="portfolio__item">
+                        <img src="images/JS-Snake.gif" alt="" class="portfolio__img">
+                </a>
+                <!-- Portfolio item 0 03 -->
+                 <a href="#" class="portfolio__item">
+                        <img src="images/AJAX-API-Search.gif" alt="" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your email address -->
+            <a href="mailto:drvicki.bealman@gmail.com" class="footer__link"><i class="fas fa-envelope-square"></i></a>
+            <ul class="social-list">
+                <li class="social-list__item"><a class="social-list__link" href="https://codepen.io/drvicki"><i class="fab fa-codepen"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://twitter.com/Vbealman1"><i class="fab fa-twitter"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://github.com/DrVicki"><i class="fab fa-github"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/dr-vicki-bealman/"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </footer>
+
     </body>
+
 </html>
